@@ -122,7 +122,7 @@ const HEADER_HTML = `
                                 <div class="tgmenu__action tgmenu__action-six">
                                     <ul class="list-wrap">
                                         <li class="header-btn lang-btn-item">
-                                            <a href="#" class="tg-btn tg-btn-four tg-btn-five lang-btn">الإنجليزية</a>
+                                            <a href="#" class="tg-btn tg-btn-four tg-btn-five lang-btn">English</a>
                                         </li>
                                         <li class="header-btn ticket-btn-item">
                                             <a href="https://majalnet.freshdesk.com/support/login" target="_blank" rel="noopener noreferrer" class="tg-btn tg-btn-four tg-btn-five"
