@@ -8,14 +8,9 @@ url("../fonts/beeko-icon/flaticon_tg_default.svg?e3deef4d25a8a816ffcc2046eac5a26
 }
 
 
-<<<<<<< HEAD
 i[class^="tg-flaticon-"]:before, i[class*=" tg-flaticon-"]:before,
 [class^="tg-flaticon-"]:before, [class*=" tg-flaticon-"]:before {
     font-family: "flaticon_tg_default" !important;
-=======
-i[class^="tg-flaticon-"]:before, i[class*=" tg-flaticon-"]:before {
-    font-family: flaticon_tg_default !important;
->>>>>>> 25aeaf99e87c79cc2af624b91b393b5008fe9522
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
