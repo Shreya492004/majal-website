@@ -18,9 +18,14 @@
     url("../fonts/flat-icon/tg-flaticon.svg?9e8d632884dc1231224de856e63972c4#flaticon_bkfhm") format("svg")
 }
 
+<<<<<<< HEAD
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before,
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before {
     font-family: "tg_flaticon" !important;
+=======
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: tg_flaticon !important;
+>>>>>>> 25aeaf99e87c79cc2af624b91b393b5008fe9522
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;

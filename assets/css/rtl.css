@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ==========================================================================
    29LT Bukra Font Definition & Global RTL Application
    ========================================================================== */
@@ -101,6 +102,10 @@ html[dir="rtl"] .fa::before {
   font-family: "Font Awesome 5 Free" !important;
   font-weight: 900 !important;
 }
+=======
+
+
+>>>>>>> 25aeaf99e87c79cc2af624b91b393b5008fe9522
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
 
