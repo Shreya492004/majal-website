@@ -1407,7 +1407,7 @@ textarea {
 }
 
 .breadcrumb__content .breadcrumb>* a {
-  color:#23a92b;
+  color: #23a92b;
 }
 
 .breadcrumb__content .breadcrumb>* a:hover {
@@ -26995,6 +26995,3 @@ blockquote cite {
     font-size: calc(var(--tg-body-font-size) + 3px);
   }
 }
-
-
-
