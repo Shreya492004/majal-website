@@ -1,0 +1,803 @@
+/*=============================
+    - Custom Style Enhancements
+===============================*/
+
+/* Solutions Megamenu Styles (2-Column Format) */
+@media (min-width: 992px) {
+    .tgmenu__navbar-wrap ul li .sub-menu.solutions-sub-menu {
+        min-width: 820px;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, auto);
+        grid-auto-flow: column;
+        padding: 22px 28px;
+        gap: 6px 30px;
+        left: -250px;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-top: none;
+    }
+
+    .tgmenu__navbar-wrap ul li .sub-menu.solutions-sub-menu li {
+        display: block;
+    }
+
+    .tgmenu__navbar-wrap ul li .sub-menu.solutions-sub-menu li a {
+        padding: 8px 12px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #0b1538;
+        line-height: 1.4;
+        border-radius: 6px;
+        transition: all 0.2s ease-in-out;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 14px !important;
+    }
+
+    .tgmenu__navbar-wrap ul li .sub-menu.solutions-sub-menu li a:hover {
+        background: #f4f6fa;
+        color: var(--tg-theme-primary);
+    }
+
+    .tgmenu__navbar-wrap ul li .sub-menu.solutions-sub-menu li a i {
+        margin: 0 !important;
+        color: var(--tg-theme-primary);
+        font-size: 16px;
+        width: 20px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    .tgmenu__navbar-wrap ul li .sub-menu.solutions-sub-menu li a::after {
+        content: none !important;
+    }
+
+    /* Standard Vertical Submenus (e.g. Services) */
+    .tgmenu__navbar-wrap ul li .sub-menu:not(.solutions-sub-menu) {
+        display: flex !important;
+        flex-direction: column !important;
+        min-width: 290px !important;
+        padding: 12px 0 !important;
+        background: #ffffff !important;
+        border-radius: 0 0 10px 10px !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-top: none;
+    }
+
+    .tgmenu__navbar-wrap ul li .sub-menu:not(.solutions-sub-menu) li {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .tgmenu__navbar-wrap ul li .sub-menu:not(.solutions-sub-menu) li a {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        padding: 10px 22px !important;
+        font-size: 15px !important;
+        font-weight: 500 !important;
+        color: #0b1538 !important;
+        width: 100% !important;
+        white-space: nowrap !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+
+    .tgmenu__navbar-wrap ul li .sub-menu:not(.solutions-sub-menu) li a:hover {
+        color: var(--tg-theme-primary) !important;
+        background: #f4f6fa !important;
+        padding-left: 26px !important;
+    }
+}
+
+.project__thumb-two::before {
+    display: none !important;
+}
+
+/* Blog Detail Pages Custom Styles */
+.main-area {
+    overflow: visible !important;
+}
+
+@media (min-width: 992px) {
+    .project__sidebar,
+    .services__sidebar {
+        position: sticky !important;
+        top: 110px;
+        height: fit-content;
+        align-self: flex-start;
+    }
+}
+
+.sidebar__cat-list .list-wrap li.active a,
+.sidebar__cat-list .list-wrap li a[style*="background"],
+.sidebar__cat-list .list-wrap li a:hover {
+    background: #5373e1 !important;
+    border-color: #5373e1 !important;
+    color: var(--tg-color-white-default) !important;
+}
+
+.sidebar__cat-list .list-wrap li.active a span,
+.sidebar__cat-list .list-wrap li a[style*="background"] span,
+.sidebar__cat-list .list-wrap li a:hover span,
+.sidebar__cat-list .list-wrap li a span[style*="color"] {
+    color: #5373e1 !important;
+}
+
+.sidebar__tag-list a {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--tg-body-color);
+    background: #f4f5f8;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s;
+}
+
+.sidebar__tag-list a:hover {
+    background: var(--tg-theme-primary) !important;
+    border-color: var(--tg-theme-primary) !important;
+    color: #fff !important;
+}
+
+/* Contact Page Heights & Aligned Layout */
+@media (min-width: 992px) {
+    .contact__info-wrap {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .contact__info-wrap .contact__info-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact__form-wrap {
+        /* height: 100%; */
+    }
+}
+
+/* ==========================================================================
+   Awards Grid and Cards
+   ========================================================================== */
+.awards__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .awards__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .awards__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.award__card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.award__card:hover {
+    transform: translateY(-8px);
+}
+
+.award__thumb {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+}
+
+.award__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.award__card:hover .award__thumb img {
+    transform: scale(1.08);
+}
+
+.award__badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--tg-theme-primary);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.award__content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.award__meta {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.award__meta i {
+    color: var(--tg-theme-primary);
+}
+
+.award__title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #080a5b;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    transition: color 0.3s;
+}
+
+.award__card:hover .award__title {
+    color: var(--tg-theme-primary);
+}
+
+.award__excerpt {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/*/* ==========================================================================
+   Custom Interactive Modal for Award Details (Centered Image + Bottom Caption)
+   ========================================================================== */
+/* WhatsApp button styles on awards card */
+.project__content-five .arrow.whatsapp-btn {
+    background: #25D366;
+    color: #fff;
+    font-size: 22px;
+}
+.project__content-five .arrow.whatsapp-btn:hover {
+    background: #20ba5a;
+    color: #fff;
+}
+
+/* Arabic Language Button on Mobile Navbar */
+.arabic-lang-btn-wrapper {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .arabic-lang-btn-wrapper {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: 0 !important;
+    }
+    
+    .arabic-lang-btn-wrapper .tg-btn {
+        padding: 8px 16px !important;
+        font-size: 13px !important;
+        min-width: auto !important;
+        height: auto !important;
+        line-height: 1 !important;
+    }
+}
+
+/* ==========================================================================
+   Career/Job Page Styles
+   ========================================================================== */
+.career-item-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+}
+
+.career-item-card .title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--tg-theme-secondary);
+}
+
+.career-item-card p {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.career-item-card p strong {
+    color: var(--tg-theme-primary);
+}
+
+.career-item-card .list-wrap {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.career-item-card .list-wrap li {
+    background: #FAF9F6;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--tg-theme-secondary);
+}
+
+.career-item-card .career__item-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+}
+
+.career-item-card .salary {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: var(--tg-theme-secondary);
+}
+
+.career-item-card .salary span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--tg-body-color);
+}
+
+.career-item-card .apply-trigger-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+}
+
+.career-form-wrap {
+    position: sticky;
+    top: 120px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    z-index: 10;
+}
+
+.career-form-wrap .title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.career-form-wrap p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--tg-body-color);
+    opacity: 0.85;
+    margin-bottom: 30px;
+}
+
+.career-form-wrap input[type="text"],
+.career-form-wrap input[type="email"],
+.career-form-wrap select,
+.career-form-wrap textarea {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.career-form-wrap select {
+    width: 100%;
+    height: 55px;
+    padding: 0 20px;
+    color: var(--tg-body-color);
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.career-form-wrap .form-grp-resume {
+    margin-bottom: 25px;
+}
+
+.career-form-wrap .form-grp-resume label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.career-form-wrap input[type="file"] {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.career-form-wrap textarea {
+    min-height: 120px;
+}
+
+.career-form-wrap button[type="submit"] {
+    /* overridden by job-btnn */
+}
+
+.career-submit-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.job-btnn {
+    width: 50% !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+/* ==========================================================================
+   Floating Call Button (Vibrating)
+   ========================================================================== */
+@keyframes phone-vibrate {
+    0% { transform: scale(1); }
+    5% { transform: scale(1.08) rotate(-8deg); }
+    10% { transform: scale(1.08) rotate(8deg); }
+    15% { transform: scale(1.08) rotate(-8deg); }
+    20% { transform: scale(1.08) rotate(8deg); }
+    25% { transform: scale(1) rotate(0deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes phone-pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.5); opacity: 0; }
+}
+
+.floating-call-btn {
+    position: fixed;
+    bottom: 85px;
+    right: 17px;
+    width: 50px;
+    height: 50px;
+    background-color: #0d52d6;
+    color: #ffffff !important;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: phone-vibrate 2.5s infinite;
+}
+
+.floating-call-btn i {
+    font-size: 20px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 1em !important;
+    height: 1em !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #ffffff !important;
+    line-height: 1 !important;
+    transform: none !important;
+}
+
+.floating-call-btn:hover {
+    background-color: var(--tg-theme-secondary);
+    transform: scale(1.08);
+}
+
+.floating-call-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #0d52d6;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    animation: phone-pulse 2s infinite;
+    z-index: -1;
+}
+
+/* Adjustments for mobile */
+@media (max-width: 575.98px) {
+    .floating-call-btn {
+        width: 46px !important;
+        height: 46px !important;
+        bottom: 80px !important;
+        right: 14px !important;
+    }
+    .floating-call-btn i {
+        font-size: 18px !important;
+    }
+}
+
+/* About Section Client Image Cluster */
+.about-cluster-img {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.about-cluster-img img {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: cover;
+    border-radius: 50% !important;
+    border: 2px solid #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-left: -12px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.about-cluster-img img:first-child {
+    margin-left: 0;
+}
+
+.about-cluster-img img:hover {
+    transform: translateY(-3px) scale(1.08);
+    z-index: 10;
+}
+
+/* CCTV Partner Logos Border */
+.cctv-brand-active .brand-item {
+    border: 1px solid #eef0f3;
+    border-radius: 8px;
+    padding: 15px 10px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.cctv-brand-active .brand-item:hover {
+    border-color: var(--tg-theme-primary);
+}
+
+/* Make Key Achievements / Awards Swiper images slightly smaller */
+.project__thumb-seven img {
+    height: 500px !important;
+}
+
+/* Mobile Overrides for List Items */
+@media (max-width: 767px) {
+    .about__list-item-two li {
+        font-weight: 400 !important;
+        line-height: 1.5 !important;
+        align-items: flex-start !important;
+    }
+    .about__list-item-two li .icon {
+        margin-top: 3px !important;
+    }
+}
+
+/* Custom Details List for Access Control and other pages */
+.custom-details-list {
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+}
+.custom-details-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 400; /* removes bold */
+    line-height: 1.5;
+    margin-bottom: 14px;
+    color: var(--tg-body-color);
+}
+.custom-details-list li:last-child {
+    margin-bottom: 0;
+}
+.custom-details-list li i {
+    font-size: 18px;
+    color: var(--tg-theme-primary);
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+}
+@media (max-width: 767px) {
+    .custom-details-list li {
+        align-items: flex-start;
+    }
+    .custom-details-list li i {
+        margin-top: 3px;
+    }
+}
+
+/* Custom Features Row & Cards on Access Control Page */
+.custom-features-row {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    gap: 20px 0;
+}
+.services__details-quality-box {
+    height: 100%;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 25px;
+    border: 1px solid rgba(var(--tg-theme-primary-rgb, 99, 91, 255), 0.15);
+    border-radius: 8px;
+    background: rgba(var(--tg-theme-primary-rgb, 99, 91, 255), 0.02);
+}
+
+/* Gate Barriers & Turnstiles Solution Layout Classes */
+.gate-barriers-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gate-barriers-list {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.gate-barriers-row {
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
+}
+
+
+
+.gate-barriers-img-wrapper {
+    margin-bottom: 15px !important;
+}
+
+.gate-barriers-heading {
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+    color: var(--tg-theme-primary) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.gate-barriers-text {
+    margin-bottom: 0 !important;
+}
+
+.gate-barriers-section {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.gate-barriers-section-heading {
+    font-size: 18px !important;
+    margin-bottom: 15px !important;
+    color: var(--tg-theme-primary) !important;
+    display: flex !important;
+    gap: 10px !important;
+    align-items: center !important;
+}
+
+.gate-barriers-quality {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.gate-barriers-quality-heading {
+    font-size: 18px !important;
+    margin-bottom: 15px !important;
+    color: var(--tg-theme-primary) !important;
+}
+
+.gate-barriers-title-two {
+    margin-top: 30px !important;
+    margin-bottom: 10px !important;
+}
+
+/* Video Banner Style Enhancements */
+.slider__bg-four {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider__bg-four::before {
+    background: rgba(0, 0, 0, 0.1) !important; /* Balanced backdrop overlay to make centered white text pop */
+    z-index: -1 !important;
+}
+
+.slider__content-three {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    pointer-events: none;
+}
+
+/* Prevent horizontal page overflow (extra space on the right side) */
+html, body {
+    overflow-x: clip;
+}
+
+/* Breadcrumb Video Banner Styling */
+.breadcrumb__bg {
+    overflow: hidden;
+}
+
+.breadcrumb-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    pointer-events: none;
+}
+
+/* Conditional Breadcrumb Styling based on background type */
+
+/* For video breadcrumbs: Apply increased height/padding */
+.breadcrumb__area:has(.breadcrumb-video) {
+    padding: 230px 0 !important;
+}
+
+@media (max-width: 991.98px) {
+    .breadcrumb__area:has(.breadcrumb-video) {
+        padding: 80px 0 !important;
+    }
+}
+
+/* Remove background overlay only for video breadcrumbs */
+.breadcrumb__bg:has(.breadcrumb-video)::before {
+    display: none !important;
+}
+
+
+/* ==========================================================================
+   Large Screen Typography Adjustments (32-inch, 55-inch monitors & TVs)
+   ========================================================================== */
+@media (min-width: 2560px) {
+    html {
+        font-size: 20px; /* Scales rem-based elements up by ~4px */
+    }
+    :root {
+        --tg-body-font-size: 20px; /* Updates the custom property for body text */
+    }
+}
